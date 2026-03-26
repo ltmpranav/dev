@@ -1,0 +1,22 @@
+fragment CardWrapperData on CardWrapper
+{
+    Heading
+    Cards {
+        Description
+        Image {
+        default
+        hierarchical
+        }
+        Link {
+        title
+        text
+        url{
+            default
+            hierarchical
+            base
+        }
+        target
+        }
+        Title
+    }
+}

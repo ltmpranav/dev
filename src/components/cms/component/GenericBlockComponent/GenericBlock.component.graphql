@@ -1,0 +1,15 @@
+fragment GenericData on Generic {
+  Title: Title
+  Description: Description
+  Button: Button{
+  text
+            url {
+              default
+            }
+  }
+  Image: Image{
+ url {
+              default
+            }
+ }
+  }

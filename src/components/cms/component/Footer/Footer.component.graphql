@@ -1,0 +1,59 @@
+fragment FooterData on MDX_Footer {
+  footer {
+    ... on MDX_Footer_Navigation {
+      socialMediaLinkItems {
+        url {
+          default
+        }
+      }
+      aKWAsitedescription
+      LanguageItems {
+        ... on MDX_Language_Items_List {
+          languageItem {
+            ... on MDX_Language_Item {
+              pdfLink {
+                url {
+                  default
+                }
+              }
+              name
+              nativeName
+              languageCode
+            }
+          }
+        }
+      }
+      footerMenuItems{
+        ... on MDX_Footer_Menu_Navigation_Links{
+          HeaderTitle
+          Links{
+            url{
+              default
+            }
+            title
+            text
+          }
+          visibilityrules
+        }
+      }
+      copyright
+      goToAKWAsitebutton
+      impersonationText
+      languageSupport
+      legal {
+        html
+      }
+      nCQADisclaimer
+      producers
+      providers
+      socialMediaLinkItems {
+        url {
+          default
+        }
+        title
+        text
+        target
+      }
+    }
+  }
+}

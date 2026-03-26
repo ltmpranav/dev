@@ -1,0 +1,5 @@
+fragment StartPageData on StartPage {
+    MainContentArea{
+        ...BlockData
+    }
+}

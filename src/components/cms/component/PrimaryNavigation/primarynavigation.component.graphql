@@ -1,0 +1,22 @@
+fragment headermenufields on MDX_Header_Menu_Item {
+  menuHeading
+  MegaMenuContentArea {
+    ... menunavigationfields
+  }
+}
+
+fragment menunavigationfields on MDX_Menu_Navigation {
+  VisibilityRules
+  navigationLinksList: NavigationLinks {
+    text
+    url {
+      default
+      type
+    }
+  }
+}
+fragment PrimaryNavigationData on MDX_Primary_Navigation{
+    PrimaryNavigation {
+        ... headermenufields
+      }
+}
